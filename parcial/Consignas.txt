@@ -1,0 +1,13 @@
+Desarrollo del Examen
+________________________________________
+
+Actividad: Utilizando la base de datos Ventas2, realice las siguientes actividades:
+
+1.	Desarrolle una consulta que presente Artículo, Nombre, Total y TipoVenta (Mayor o Menor), y que muestre aquellos artículos pertenecientes a marcas activas (ACTIVO = 'S') que vendieron como mínimo $5000 en cualquiera de los tipos de venta en el año 2006. Excluya siempre las ventas anuladas, y tome para el cálculo de los totales CANTIDAD * PRECIO para ventas minoristas, y CANTIDAD * PRECIO REAL para ventas mayoristas. Ordene por código de artículo y tipo de venta. (30 puntos)
+
+2.	Determine en una sola consulta los artículos (código, nombre e importe) que generaron más ventas mayoristas (en importe) en el año 2006 que el artículo A205221022 en el 2005. Excluya siempre las ventas anuladas. Utilice para el cálculo de los totales CANTIDAD * PRECIOREAL. (35 puntos)
+
+3.	La empresa decidió pagar un premio equivalente al 3% de las ventas generadas en el año 2008 por los vendedores que no son encargados (ENCARGADO = 'N'), están activos (ACTIVO = 'S'), y superaron los $100.000 en ventas en el año. Además, debe cumplir la condición de haber tenido una antigüedad en el año 2008 de al menos 3 años para recibir el premio. Para calcular la antigüedad deberá tomar el año de la fecha de ingreso. Liste el nombre del vendedor, su antigüedad, el total vendido en el 2008, y el valor del premio a pagar. Ordene por vendedor y excluya ventas anuladas. (35 puntos)
+
+
+Presente un solo archivo comprimido que contenga el presente documento completo y el archivo SQL con las sentencias solicitadas, identificado como [APELLIDO, NOMBRE - DNI].ZIP

@@ -1,0 +1,23 @@
+Desarrollo del Examen
+________________________________________
+
+Actividad: Utilizando el subesquema de Ventas Minoristas de la base de datos Ventas2, resuelva las situaciones de negocio solicitadas a continuación. 
+
+Presente un solo archivo comprimido que contenga el presente documento completo y el archivo SQL con las sentencias solicitadas, identificado como [APELLIDO, NOMBRE - DNI].ZIP
+
+
+
+ 
+
+1.	El artículo B107130014 es una Campera de Cuero clásica de alto valor, de la cual, cuando la empresa comenzó su actividad se distribuyeron 30 unidades en cada sucursal para su venta. Se precisa determinar el stock actual de ese artículo en cada sucursal, siempre y cuando sea mayor a cero. Listar el nombre de la sucursal, la cantidad vendida y la cantidad actual, ordenado por sucursal. (30 puntos)
+
+2.	Cree la vista v_comisiones_vendedores_2008, donde se calculen las comisiones que le corresponden a cada vendedor para cada mes del año 2008, de acuerdo con sus ventas, su antigüedad y su categoría (encargado o no encargado). (40 puntos) 
+
+El criterio de cálculo de las comisiones es el siguiente: 
+•	Si el vendedor es encargado, la comisión mensual es del 0.05, y se le pagan $500 adicionales por cada año de antigüedad.
+•	Si el vendedor NO es encargado, la comisión mensual es de 0.03 y se le pagan $300 adicionales por cada año de antigüedad.
+•	Solamente se deben pagar comisiones si el vendedor superó los $5000 en ventas por mes.
+
+La vista debe mostrar el código del vendedor, el nombre, si es o no encargado, la antigüedad que tenía en el 2008, el mes, el importe total de ventas y la comisión a cobrar. Excluya ventas anuladas.
+
+3.	Cree el procedimiento almacenado sp_articulos_sin_ventas que, recibiendo como parámetro un año determinado, cree la tabla TmpArticulosSinVentas. Esta tabla deberá contener los artículos que no registraron ninguna venta en el año especificado. La estructura de la tabla debe ser: artículo (código), nombre, marca (nombre), rubro (nombre), preciomayor y preciomenor. El procedimiento deberá validar la existencia de la tabla y contar con manejo de errores y mensajes con el resumen de las filas insertadas. (30 puntos)
